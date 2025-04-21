@@ -35,7 +35,7 @@ Los principales casos de uso son:
 4. **Gestión de premios**:
     - Asignar premios a los ganadores.
 
-![Diagrama de Casos de Uso](UML/casos-de-uso.png)
+![Diagrama de Casos de Uso](diagrams/casos-de-uso.png)
 
 ---
 
@@ -63,7 +63,7 @@ El diagrama de clases describe la estructura del sistema y cómo se organizan la
     - **VistaTorneo**: Proporciona la interfaz para interactuar con los torneos y partidas.
     - **VistaPremio**: Proporciona la interfaz para la gestión de premios.
 
-![Diagrama de Clases UML](UML/clases-uml.png)
+![Diagrama de Clases UML](diagrams/clases.png)
 
 ---
 
@@ -97,5 +97,5 @@ Este proyecto también me ha permitido mejorar mis habilidades en la creación d
 ## Enlaces
 
 - [Repositorio en GitHub](https://github.com/alexMagic7/AlexanderRomanDiaz_Actividad3_ED)
-- [Diagrama de Casos de Uso](UML/casos-de-uso.png)
-- [Diagrama de Clases UML](UML/clases-uml.png)
+- [Diagrama de Casos de Uso](diagrams/casos-de-uso.png)
+- [Diagrama de Clases UML](diagrams/clases.png)
