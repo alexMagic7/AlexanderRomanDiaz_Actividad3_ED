@@ -96,6 +96,6 @@ Este proyecto también me ha permitido mejorar mis habilidades en la creación d
 
 ## Enlaces
 
-- [Repositorio en GitHub](https://github.com/alexMagic7/AlexanderRomanDiaz_Actividad3_ED)
+- [Repositorio en GitHub](https://github.com/alexMagic7/torneo-esports-uml)
 - [Diagrama de Casos de Uso](diagrams/casos-de-uso.png)
 - [Diagrama de Clases UML](diagrams/clases.png)
