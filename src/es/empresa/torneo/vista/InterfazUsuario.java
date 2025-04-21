@@ -7,15 +7,18 @@ import es.empresa.torneo.control.TorneoController;
 
 public class InterfazUsuario {
 
+    private TorneoController torneoController;
+
+    public InterfazUsuario() {
+        this.torneoController = new TorneoController(null);
+    }
+
     public void mostrarMenu() {
-        // Muestra opciones al usuario
         System.out.println("1. Crear torneo");
         System.out.println("2. Registrar equipo");
-        // Otras opciones
     }
 
     public void crearTorneo(String nombre) {
-        TorneoController torneoController = new TorneoController(null);
         torneoController.crearTorneo(nombre);
         System.out.println("Torneo creado: " + nombre);
     }
@@ -23,7 +26,16 @@ public class InterfazUsuario {
     public void registrarEquipo(String nombreEquipo) {
         Equipo equipo = new Equipo(nombreEquipo);
         EquipoController equipoController = new EquipoController(equipo);
+
+        // Ejemplo: se añaden 2 jugadores por defecto
         equipoController.registrarJugador(new Jugador("Juan", 25));
-        System.out.println("Equipo registrado: " + nombreEquipo);
+        equipoController.registrarJugador(new Jugador("Lucía", 22));
+
+        torneoController.inscribirEquipo(equipo);
+        System.out.println("Equipo registrado: " + equipo);
+    }
+
+    public void mostrarTorneo() {
+        System.out.println(torneoController.getTorneo());
     }
 }

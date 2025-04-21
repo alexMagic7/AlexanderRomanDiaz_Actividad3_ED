@@ -1,5 +1,6 @@
 package es.empresa.torneo.modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Torneo {
@@ -8,17 +9,23 @@ public class Torneo {
 
     public Torneo(String nombre) {
         this.nombre = nombre;
+        this.equipos = new ArrayList<>();
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void registrarEquipo(Equipo equipo) {
+    public List<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public void añadirEquipo(Equipo equipo) {
         equipos.add(equipo);
     }
 
-    public List<Equipo> getEquipos() {
-        return equipos;
+    @Override
+    public String toString() {
+        return "Torneo: " + nombre + " | Equipos: " + equipos;
     }
 }

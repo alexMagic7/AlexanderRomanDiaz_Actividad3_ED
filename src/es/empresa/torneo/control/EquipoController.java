@@ -13,4 +13,8 @@ public class EquipoController {
     public void registrarJugador(Jugador jugador) {
         equipo.añadirJugador(jugador);
     }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
 }

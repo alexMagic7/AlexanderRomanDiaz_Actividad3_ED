@@ -1,5 +1,6 @@
 package es.empresa.torneo.modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Equipo {
@@ -8,17 +9,23 @@ public class Equipo {
 
     public Equipo(String nombre) {
         this.nombre = nombre;
+        this.jugadores = new ArrayList<>(); // 🔧 ¡Inicializamos la lista aquí!
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public List<Jugador> getJugadores() {
+        return jugadores;
+    }
+
     public void añadirJugador(Jugador jugador) {
         jugadores.add(jugador);
     }
 
-    public List<Jugador> getJugadores() {
-        return jugadores;
+    @Override
+    public String toString() {
+        return "Equipo: " + nombre + " | Jugadores: " + jugadores;
     }
 }

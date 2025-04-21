@@ -96,6 +96,6 @@ Este proyecto también me ha permitido mejorar mis habilidades en la creación d
 
 ## Enlaces
 
-- [Repositorio en GitHub](https://github.com/usuario/repositorio)
-- [Diagrama de Casos de Uso](ruta/a/diagrama/casos-de-uso.png)
-- [Diagrama de Clases UML](ruta/a/diagrama/clases-uml.png)
+- [Repositorio en GitHub](https://github.com/alexMagic7/AlexanderRomanDiaz_Actividad3_ED)
+- [Diagrama de Casos de Uso](UML/casos-de-uso.png)
+- [Diagrama de Clases UML](UML/clases-uml.png)

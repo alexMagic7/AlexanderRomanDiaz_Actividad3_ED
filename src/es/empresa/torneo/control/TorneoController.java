@@ -11,10 +11,16 @@ public class TorneoController {
     }
 
     public void crearTorneo(String nombre) {
-        this.torneo = new Torneo(nombre);
+        torneo = new Torneo(nombre);
     }
 
     public void inscribirEquipo(Equipo equipo) {
-        torneo.registrarEquipo(equipo);
+        if (torneo != null) {
+            torneo.añadirEquipo(equipo);
+        }
+    }
+
+    public Torneo getTorneo() {
+        return torneo;
     }
 }

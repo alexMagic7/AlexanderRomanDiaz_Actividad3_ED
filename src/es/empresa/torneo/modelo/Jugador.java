@@ -16,4 +16,9 @@ public class Jugador {
     public int getEdad() {
         return edad;
     }
+
+    @Override
+    public String toString() {
+        return nombre + " (" + edad + " años)";
+    }
 }
